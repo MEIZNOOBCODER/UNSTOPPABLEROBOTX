@@ -12,7 +12,7 @@ from UnstoppableRobot.modules.helper_funcs.chat_status import user_admin
 from UnstoppableRobot.modules.helper_funcs.alternate import typing_action
 
 # from UnstoppableRobot.modules.rules import get_rules
-import FallenRobot.modules.sql.rules_sql as rulessql
+import UnstoppableRobot.modules.sql.rules_sql as rulessql
 
 # from UnstoppableRobot.modules.sql import warns_sql as warnssql
 import UnstoppableRobot.modules.sql.blacklist_sql as blacklistsql
