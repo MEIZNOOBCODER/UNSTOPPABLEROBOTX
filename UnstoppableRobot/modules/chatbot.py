@@ -40,7 +40,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Fallen Robot Chatbot Disabled By {}.".format(mention_html(user.id, user.first_name)),
+                "Unstoppable Robot Chatbot Disabled By {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -66,7 +66,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Fallen Robot Chatbot Enabled By {}.".format(mention_html(user.id, user.first_name)),
+                "Unstoppable Robot Chatbot Enabled By {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -117,7 +117,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         sweetie = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/Fallen/Anonymous/message={sweetie}" 
+        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/UNSTOPPABLE/Shaurya/message={sweetie}" 
         request = requests.get(url) 
         results = json.loads(request.text) 
         boyresult = f"{results['reply']}"
@@ -126,7 +126,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>Fallen Enabled Chats</b>\n"
+    text = "<b>Unstoppable Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
