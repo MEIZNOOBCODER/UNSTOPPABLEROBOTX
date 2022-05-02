@@ -256,6 +256,7 @@ async def lego(event):
   return
  pesan = await event.reply('**ᴄʀᴇᴀᴛɪɴɢ ʏᴏᴜʀ ʀᴇǫᴜᴇsᴛᴇᴅ ʟᴏɢᴏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ᴀ sᴇᴄ​...**')
  try:
+    sender = await event.get_sender()
     text = event.pattern_match.group(1)
     randc = random.choice(LOGO_LINKS)
     img = Image.open(io.BytesIO(requests.get(randc).content))
@@ -276,7 +277,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "Unstoppable.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"━━━━━━━━━━━━━━━━\nʟᴏɢᴏ sᴜᴄᴄᴇssꜰᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ​ [💔 •ᴜɴsᴛ🅞 ᴘᴘᴀʙʟᴇ• ‌ٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖ💔](https://t.me/misslisa_robot)\n━━━━━━━━━━━━━━━━")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"━━━━━━━━━━━━━━━━\nʟᴏɢᴏ sᴜᴄᴄᴇssꜰᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ​ [💔 •ᴜɴsᴛ🅞 ᴘᴘᴀʙʟᴇ• ‌💔](https://t.me/misslisa_robot)\n\nRequested By : [{}](tg://user?id={}) 🥀\n━━━━━━━━━━━━━━━━".format(first_name, user.id))         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
