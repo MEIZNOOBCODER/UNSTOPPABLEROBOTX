@@ -377,7 +377,7 @@ def UnstoppableRobot_about_callback(update: Update, context: CallbackContext):
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.HTML,
-                disable_web_page_preview=True,
+                disable_web_page_preview=False,
         )
 
     elif query.data == "bot_source":
@@ -387,7 +387,7 @@ def UnstoppableRobot_about_callback(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                       InlineKeyboardButton(text="◁", callback_data="Unstoppable_back")
+                       InlineKeyboardButton(text="◁", callback_data="Unstoppable_back"),
                     ],
                 ),                
         )
