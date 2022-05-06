@@ -101,6 +101,7 @@ buttons = [
         InlineKeyboardButton(
             text="•ʜᴇʟᴘ & ᴄᴍᴅs​​​•", callback_data="help_back"),
     ], 
+]
 
 UnstoppableRobot_IMG = "https://te.legra.ph/file/7162d76837411136a7718.jpg"
 
