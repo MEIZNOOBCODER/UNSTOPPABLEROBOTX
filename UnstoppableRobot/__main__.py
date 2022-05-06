@@ -93,14 +93,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="•ʜᴇʟᴘ & ᴄᴍᴅs​​​•", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
             text="•ᴀʙᴏᴜᴛ ᴍᴇ​​•", callback_data="Unstoppable_"),
         InlineKeyboardButton(
-            text="•sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ•", callback_data="source_"),
-    ],  
+            text="•sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ•", callback_data="bot_source"),
+    ], 
+    [
+        InlineKeyboardButton(
+            text="•ʜᴇʟᴘ & ᴄᴍᴅs​​​•", callback_data="help_back"),
+    ], 
 
 UnstoppableRobot_IMG = "https://te.legra.ph/file/7162d76837411136a7718.jpg"
 
@@ -379,7 +379,7 @@ def UnstoppableRobot_about_callback(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
         )
 
-    elif query.data == "Unstoppable_back":
+    elif query.data == "bot_source":
         query.message.edit_text(
                 text="""*ʜᴇʏ,\n\nɪ ᴀᴍ *[•ᴜɴⓢᴛᴏᴘᴘᴀʙʟᴇ ʀᴏʙᴏᴛ•] ‌ٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖ\n\n*ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs ɪɴ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴀɴᴅ ɴᴏᴛ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ʏᴇᴛ*\n*ɪꜰ ʏᴏᴜ sᴛɪʟʟ ᴡᴀɴᴛ ᴛᴏ ɢᴇᴛ ɪᴛ ʏᴏᴜ ᴄᴀɴ​ ᴀsᴋ ɪᴛ ɪɴ *@S_UNSTOPPABLE *ᴏʀ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ* [[•ᴜɴsᴛ🅞 ᴘᴘᴀʙʟᴇ•]](tg://user?id=5369590180)""",                
                 parse_mode=ParseMode.MARKDOWN,
