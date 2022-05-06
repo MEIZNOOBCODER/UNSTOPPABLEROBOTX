@@ -76,7 +76,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-<b>ʜᴇʏ, ɢᴜʏs🧚‍♀️
+<b>ʜᴇʏ, ʙᴀʙʏ🧚‍♀️
 ɪ ᴀᴍ <a href='https://t.me/misslisa_robot'>•ᴜɴⓢᴛᴏᴘᴘᴀʙʟᴇ ʀᴏʙᴏᴛ•</a>
 
 ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ
