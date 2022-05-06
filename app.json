@@ -22,7 +22,7 @@
       "TOKEN": {
          "description": "Get bot token from @BotFather on TG",
          "required": true,
-         "value": "5151005890:AAEDLqOZtywhyN2FivOf_fOjw9BRnQkU10M"
+         "value": "5151005890:AAGyijyukFb-GgzDbRvA0mEIXjnlglfgiLg"
       },
       "API_ID": {
          "description": "Get this value from my.telegram.org/apps.",
