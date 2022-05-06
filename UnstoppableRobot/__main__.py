@@ -76,7 +76,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ\n ɪ'ᴍ [•ᴜɴⓢᴛᴏᴘᴘᴀʙʟᴇ ʀᴏʙᴏᴛ•]* ‌ٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖٖٖٜٖٖٖٖ[!](https://te.legra.ph/file/ac1a97da8d0d19def9535.jpg)\n*ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ\n  ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ ꜰᴏʀ ɢᴇᴛᴛɪɴɢ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄʟɪᴄᴋ ᴏɴ ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ ᴏʀ ʜɪᴛ*​   /help
+<b>ʜᴇʏ, ɢᴜʏs🧚‍♀️
+ɪ ᴀᴍ <a href='https://t.me/Lisa_MusicBot'>•ᴜɴⓢᴛᴏᴘᴘᴀʙʟᴇ ʀᴏʙᴏᴛ•</a>
+
+ɪ ᴀᴍ ᴛʜᴇ ᴍᴏsᴛ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴏꜰ ᴛᴇʟᴇɢʀᴀᴍ
+ɪ ʜᴀᴠᴇ ᴀᴡᴇsᴏᴍᴇ ꜰᴇᴀᴛᴜʀᴇs ᴀɴᴅ ɴᴏ ᴏɴᴇ ᴄᴀɴ ʙᴇᴀᴛ ᴍᴇ ꜰᴏʀ ɢᴇᴛᴛɪɴɢ,
+ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴏʀ
+
+ʜɪᴛ ᴏɴ /help sᴏ ᴛʜᴀᴛ ᴜ ᴄᴀɴ ɢᴇᴛ ʜᴇʟᴘ ᴍᴇɴᴜ ᴀɴᴅ ᴇxᴘʟᴏʀᴇʀ<a href='https://te.legra.ph/file/ac1a97da8d0d19def9535.jpg'>.</a></b>
 """
 
 buttons = [
@@ -99,7 +106,7 @@ buttons = [
             text="•sᴜᴘᴘᴏʀᴛ•", url="https://t.me/S_UNSTOPPABLE"
         ),
         InlineKeyboardButton(
-            text="•ᴅᴇᴠᴇʟᴏᴘᴇʀ•", url="https://t.me/Shaurya_here"
+            text="•ᴅᴇᴠᴇʟᴏᴘᴇʀ•", url="tg://user?id=5369590180"
         ),
     ],
 ]
@@ -214,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 timeout=60,
             )
     else:
@@ -369,7 +376,7 @@ def UnstoppableRobot_about_callback(update: Update, context: CallbackContext):
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 timeout=60,
                 disable_web_page_preview=False,
         )
