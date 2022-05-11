@@ -22,7 +22,7 @@ ALIVE_STUFF = [
 
 @register(pattern=("/alive"))
 async def awake(event):
-  TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id}),\nɪ ᴀᴍ [•ᴜɴsᴛ🅞 ᴘᴘᴀʙʟᴇ•] ʟɪsᴀ​**\n\n━━━━━━━━━━━━━━━━━━━\n\n"
+  TEXT = f"**ʜᴇʏ​ [{event.sender.first_name}](tg://user?id={event.sender.id})**,\nɪ ᴀᴍ `[•ᴜɴsᴛ🅞 ᴘᴘᴀʙʟᴇ•] ʟɪsᴀ​`\n\n━━━━━━━━━━━━━━━━━━━\n\n"
   TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ : [•ᴜɴsᴛ🅞 ᴘᴘᴀʙʟᴇ•](https://t.me/shaurya_here)** \n\n"
   TEXT += f"» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
   TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
