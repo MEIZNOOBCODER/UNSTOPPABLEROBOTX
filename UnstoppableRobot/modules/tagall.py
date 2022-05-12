@@ -19,7 +19,7 @@ TAG_TEXT = (
     "__Believe me you are not normal.You Are Not Allowed To Do This.__",
     "__Hey Demon Gu Away. You Are Not Allowed To Do This.__")
 
-AUTH_USER = [5072650671, 5369590180, 5280801259]
+AUTH_USER = [5072650671, 5369590180, 5280801259, 1756237857]
 
 
 @client.on(events.NewMessage(pattern="^/callall ?(.*)"))
