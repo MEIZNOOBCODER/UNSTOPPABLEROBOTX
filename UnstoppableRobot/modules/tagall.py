@@ -1,5 +1,6 @@
 import os
 import asyncio
+import random
 from telethon import Button
 from telethon import TelegramClient, events
 from telethon.tl.types import ChannelParticipantAdmin
@@ -11,12 +12,20 @@ from UnstoppableRobot import telethn as client
 
 spam_chats = []
 
+TAG_TEXT = (
+    "__Owww ... Such a stupid idiot, U Can't Do This Ask My Developers.__",
+    "__Don't drink and type. You Are Not Allowed To Do This.__",
+    "__Command not found. Just like your brain.You Are Not Allowed To Do This.__",
+    "__Believe me you are not normal.You Are Not Allowed To Do This.__",
+    "__Hey Demon Gu Away. You Are Not Allowed To Do This.__")
+
 AUTH_USER = [5072650671, 5369590180, 5280801259]
 
 
 @client.on(events.NewMessage(pattern="^/callall ?(.*)"))
 @client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
+  TAGALL = random.choice(TAG_TEXT)
   chat_id = event.chat_id
   if event.sender_id in AUTH_USER:
       if event.is_private:
@@ -79,7 +88,7 @@ async def mentionall(event):
       except:
         pass
   else:
-      return await event.respond('Ja n Lvde')
+      return await event.respond(f"__Hey__ [{event.sender.first_name}](tg://user?id={event.sender_id}) " + TAGALL)
 
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
