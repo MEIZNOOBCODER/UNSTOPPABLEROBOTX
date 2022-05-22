@@ -1,4 +1,4 @@
-#Anon rndva he bc 🍌.
+#Dekh kya rha hai Unstoppable ko gand dega kya .
 
 import importlib
 import time
@@ -695,7 +695,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ᴡᴛғ ﹗  ᴜɴsᴛᴏᴩᴩᴀʙʟᴇ ᴋɪ ᴍᴋʙ 😴")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ ✨💫")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
