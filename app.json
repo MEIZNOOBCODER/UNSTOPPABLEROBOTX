@@ -46,7 +46,7 @@
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": "b7967bed-ed9e-4176-a30b-83cd83045391"
+        "value": "e792b51d-d250-49f3-a0eb-edef6758850a"
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
