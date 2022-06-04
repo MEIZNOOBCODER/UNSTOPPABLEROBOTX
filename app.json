@@ -9,7 +9,7 @@
          "manager",
          "unstoppable"
       ],   
-   "repository": "https://github.com/S-UNSTOPPABLE/UNSTOPPABLE-ROBOT",
+   "repository": "https://github.com/S-UNSTOPPABLE/UNSTOPPABLEROBOTX",
    "addons": [
       {
          "options": {
@@ -22,17 +22,17 @@
       "TOKEN": {
          "description": "Get bot token from @BotFather on TG",
          "required": true,
-         "value": "5151005890:AAGyijyukFb-GgzDbRvA0mEI"
+         "value": ""
       },
       "API_ID": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": "19519663"
+         "value": ""
       },
       "API_HASH": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": "41e486fad7e93ee23338251fe8cecb05"
+         "value": ""
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, Leave this field empty if you don't have one.",
@@ -46,7 +46,7 @@
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": "e792b51d-d250-49f3-a0eb-edef6758850a"
+        "value": ""
       },
       "HEROKU_APP_NAME": {
         "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
@@ -64,7 +64,7 @@
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://shauryamusic01:shauryamusic01@shaurya01.cokkc.mongodb.net/shaurya01?retryWrites=true&w=majority"
+         "value": ""
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
