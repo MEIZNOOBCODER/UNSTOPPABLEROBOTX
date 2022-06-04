@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/UnstoppableRobot
-RUN git clone -b shiken https://github.com/S-UNSTOPPABLE/UNSTOPPABLE-ROBOT/root/UnstoppableRobot
+RUN git clone -b shiken https://github.com/S-UNSTOPPABLE/UnstoppableRobot/root/UnstoppableRobot
 WORKDIR /root/UnstoppableRobot
 
 #Copy config file to /root/UnstoppableRobot/UnstoppableRobot
