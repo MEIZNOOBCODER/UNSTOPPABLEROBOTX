@@ -4,9 +4,9 @@ from UnstoppableRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
-normiefont = [
+normiefont = [ 
     "a",
-    "b",
+    "b ",
     "c",
     "d",
     "e",
